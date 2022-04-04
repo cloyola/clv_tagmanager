@@ -49,17 +49,11 @@ class Clv_tagmanager extends Module
 
         $this->displayName = $this->l('Insert tag manager');
         $this->description = $this->l('Insert tag manager on your website');
-        $this->google_tag = 'CLV_TAGMANAGER_GOOGLETAG';
+        $this->confirmUninstall = $this->l('Are you sure you want to uninstall this module?');
 
-        $this->confirmUninstall = $this->l('');
-
-        $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
+        $this->ps_versions_compliancy = array('min' => '1.7.8', 'max' => _PS_VERSION_);
     }
 
-    /**
-     * Don't forget to create update methods if needed:
-     * http://doc.prestashop.com/display/PS16/Enabling+the+Auto-Update
-     */
     public function install()
     {
         Configuration::updateValue('CLV_TAGMANAGER_LIVE_MODE', false);
@@ -97,9 +91,6 @@ class Clv_tagmanager extends Module
         return $output.$this->renderForm();
     }
 
-    /**
-     * Create the form that will be displayed in the configuration of your module.
-     */
     protected function renderForm()
     {
         $helper = new HelperForm();
@@ -125,9 +116,6 @@ class Clv_tagmanager extends Module
         return $helper->generateForm(array($this->getConfigForm()));
     }
 
-    /**
-     * Create the structure of your form.
-     */
     protected function getConfigForm()
     {
         return array(
@@ -172,9 +160,6 @@ class Clv_tagmanager extends Module
         );
     }
 
-    /**
-     * Set values for the inputs.
-     */
     protected function getConfigFormValues()
     {
         return array(
@@ -183,9 +168,6 @@ class Clv_tagmanager extends Module
         );
     }
 
-    /**
-     * Save form data.
-     */
     protected function postProcess() {
         $form_values = $this->getConfigFormValues();
 

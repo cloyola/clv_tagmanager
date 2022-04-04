@@ -24,14 +24,14 @@
 *}
 
 <div class="panel">
-	<h3><i class="icon icon-credit-card"></i> {l s='Insert tag manager' mod='clv_tagmanager'}</h3>
+	<h3><i class="icon icon-tag"></i> {l s='Insert tag manager' mod='clv_tagmanager'}</h3>
 	<p>
-		<strong>{l s='Here is my new generic module!' mod='clv_tagmanager'}</strong><br />
-		{l s='Thanks to PrestaShop, now I have a great module.' mod='clv_tagmanager'}<br />
-		{l s='I can configure it using the following configuration form.' mod='clv_tagmanager'}
+		<h2>{l s='Here is quick option to insert your tag!' mod='clv_tagmanager'}</h2><br />
+		{l s='If you can not edit the code or you are using multistore, this module could help you to organise your tags' mod='clv_tagmanager'}<br />
+		{l s='Configure it using the following configuration form and set one tag for each store.' mod='clv_tagmanager'}
 	</p>
 	<br />
 	<p>
-		{l s='This module will boost your sales!' mod='clv_tagmanager'}
+		{l s='This module will insert both code blocks: in page header and at the beginning of your body!' mod='clv_tagmanager'}
 	</p>
 </div>
