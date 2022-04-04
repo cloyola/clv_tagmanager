@@ -27,11 +27,19 @@
 	<h3><i class="icon icon-tag"></i> {l s='Insert tag manager' mod='clv_tagmanager'}</h3>
 	<p>
 		<h2>{l s='Here is quick option to insert your tag!' mod='clv_tagmanager'}</h2><br />
-		{l s='If you can not edit the code or you are using multistore, this module could help you to organise your tags' mod='clv_tagmanager'}<br />
-		{l s='Configure it using the following configuration form and set one tag for each store.' mod='clv_tagmanager'}
+		{l s='If you can not edit the code or you are using multistore, this module could help you to organise your tags. Configure it using the following configuration form and set one tag for each store.' mod='clv_tagmanager'}<br />
+		{l s='This module will insert both code blocks: in page header and at the beginning of your body!' mod='clv_tagmanager'}
 	</p>
 	<br />
 	<p>
-		{l s='This module will insert both code blocks: in page header and at the beginning of your body!' mod='clv_tagmanager'}
+		{l s='If you found this module useful, you can consider giving back the effort with a voluntary contribution to move forward.' mod='clv_tagmanager'}
 	</p>
+	<form action="https://www.paypal.com/donate" method="post" target="_top">
+		<input type="hidden" name="business" value="UPU5KG4P8J9PG" />
+		<input type="hidden" name="no_recurring" value="0" />
+		<input type="hidden" name="item_name" value="Si esto te resulta valioso puedes retribuir el esfuerzo con un aporte voluntario para seguir adelante." />
+		<input type="hidden" name="currency_code" value="USD" />
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+		<img alt="" border="0" src="https://www.paypal.com/en_PE/i/scr/pixel.gif" width="1" height="1" />
+	</form>
 </div>
