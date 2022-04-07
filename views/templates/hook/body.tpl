@@ -24,7 +24,7 @@
 {if (!empty($google_tag) && $live_mode)}
   {literal}
     <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={/literal}{$google_tag nofilter}{literal}"
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={/literal}{$google_tag}{literal}"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
   {/literal}
